@@ -28,9 +28,23 @@
     }
      
        function colorBackground () {
-           if (document.body.style.background = '
+           if (document.body.style.background = "../../../assets/images/background3.jpg") {
+              document.body.className = "changeBackground";
+           } else {
+              document.body.className = "undoBackground";
+           }
+       }
   </script>
   
+  <style>
+    .changeBackground section{
+        background-image: "";
+        background-color: lightblue;
+    }
+    .undoBackground section{
+        background-color: "";
+        background-image: "../../../assets/images/background3.jpg";
+  </style>
   
 </head>
 <body>
@@ -127,6 +141,10 @@
             <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
                 <strong>All About Jocelyn Duckett</strong></h4>
             
+          <button onclick="javascript:changeBackground()">Change the background</button>
+          <button onclick="javascript:undoBackground()">Undo the background</button>
+          <button onclick="javascript:changeStuff()">Wedding Flowers</button>
+         
         </div>
         <div class="row mt-4">
             
